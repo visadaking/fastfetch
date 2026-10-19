@@ -1,4 +1,13 @@
 {
+  "logo": {
+    "type": "kitty",
+    "source": "/home/yourname/.config/fastfetch/photo.png",
+    "width": 45,
+    "padding": {
+      "top": 1,
+      "left": 2
+    }
+  },
   "display": {
     "separator": " ─ ",
     "color": {
@@ -23,7 +32,8 @@
     {
       "type": "os",
       "key": "├  OS",
-      "keyColor": "blue"
+      "keyColor": "blue",
+      "format": "{pretty-name}"
     },
     {
       "type": "kernel",
@@ -59,6 +69,7 @@
       "type": "cpu",
       "key": "├ 󰍛 CPU",
       "keyColor": "cyan",
+      "format": "{name} @ {freq-max}{?temperature} - {temperature}{?}",
       "temp": true
     },
     {
